@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Intinerario</h3>
+    <form id="search_schedule" title="search schedule"action="/buy/schedule/" method="POST">
+        {% csrf_token %}
+        <div class="control">
+            <div>
+                <label >Fecha</label>
+                <div class="">
+                {{ seach_form.departure_date }}
+                {{ seach_form.departure_date.errors }}
+                </div>
+            </div>
+            <div class="control-group">
+                {{ seach_form.departure_on.errors }}
+                <label class="control-label">Origen</label>
+                {{ seach_form.departure_on }}
+            </div>
+            <div >
+                {{ seach_form.arrival_on.errors }}
+                <label class="control-label">Destino</label>
+                {{ seach_form.arrival_on }}
+                <input class="btn btn-info" type="Submit" value="Search" />
+            </div>
+        </div>
+    </form>
+
+<br>
+{% if schedule_list %}
+    <table border=1>
+        <thead>
+            <tr>
+                <th>Agencia</th>
+                <th>Hora de salida</th>
+                <th>Precio</th>
+                <th>Duración</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for schedule in schedule_list %}
+            <tr>
+                <td>{{ schedule.agency }}</td>
+                <td>{{ schedule.rate.arrival_time|time:"P" }}</td>
+                <td>{{ schedule.rate.price }}</td>
+                <td>{{ schedule.rate.duration }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+{% endblock %}

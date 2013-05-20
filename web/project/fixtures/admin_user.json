@@ -1,0 +1,20 @@
+[
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "admin", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2013-03-29T10:27:59Z", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "pbkdf2_sha256$10000$FbLYLPJ7JYFP$Ig94UltwVq9Ezlkgnf+PAlGWnqjs3jPQ5yZd9ZAcKkI=", 
+      "email": "rtbustamantec@gmail.com", 
+      "date_joined": "2013-03-29T10:03:36Z"
+    }
+  }
+]
