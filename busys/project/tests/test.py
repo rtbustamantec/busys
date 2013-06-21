@@ -12,7 +12,7 @@ class PollsTest(LiveServerTestCase):
         self.browser.quit()
 
     def test_can_create_new_poll_via_admin_site(self):
-        # Gertrude opens her web browser, and goes to the admin page
+        # Gertrude opens her busys browser, and goes to the admin page
         self.browser.get(self.live_server_url + '/admin/')
 
         # She sees the familiar 'Django administration' heading

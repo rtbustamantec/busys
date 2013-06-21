@@ -17,14 +17,14 @@ from forms import SearchForm
 
 
 class ReservationHomePage(TemplateView):
-    template_name = 'base.html'
+    template_name = 'reservation/base.html'
 
     def get(self, request, *args, **kwargs):
         return self.render_to_response(self.get_context_data())
 
 
 class ScheduleList(TemplateView):
-    template_name = 'schedule.html'
+    template_name = 'reservation/schedule.html'
     schedule_list = None
     search_form = None
 
