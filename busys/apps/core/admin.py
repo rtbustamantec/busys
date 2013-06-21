@@ -11,10 +11,10 @@ Author:
 from django.contrib import admin
 
 # 3rd party imports
-from apps.core.models import Department, Company, Agency, Buss
-from apps.core.models import ServiceType, Rate, Schedule
 
 # Local imports
+from apps.core.models import Department, Company, Agency, Buss
+from apps.core.models import ServiceType, Rate, Schedule
 
 
 admin.site.register(Department)

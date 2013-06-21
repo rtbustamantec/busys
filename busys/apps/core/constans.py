@@ -11,9 +11,10 @@ Authors:
 # Django imports
 
 # 3rd party imports
-from apps.core import strings as core_strings
 
 # Local imports
+from apps.core import strings as core_strings
+
 
 SEAT_STATE_AVAILABLE = ''
 SEAT_STATE_SELECTED = ''

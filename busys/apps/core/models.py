@@ -13,9 +13,9 @@ from django.contrib.auth.models import User
 from django.db import models
 
 # 3rd party imports
-from apps.core.middleware import threadlocals
 
 # Local imports
+from apps.core.middleware import threadlocals
 
 
 class AuditableManager(models.Manager):
