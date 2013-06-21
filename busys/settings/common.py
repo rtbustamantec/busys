@@ -60,17 +60,17 @@ ROOT_URLCONF = '{{ project_name }}.urls'
 MEDIA_ROOT = os.path.join(SITE_ROOT, 'media')
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
-STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(SITE_ROOT, 'statics')
+STATIC_URL = '/statics/'
 
-# Additional locations of static files
+# Additional locations of statics files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
+    # Put strings here, like "/home/html/statics" or "C:/www/django/statics".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
 
-# List of finder classes that know how to find static files in
+# List of finder classes that know how to find statics files in
 # various locations.
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
