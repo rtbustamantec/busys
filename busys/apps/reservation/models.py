@@ -8,8 +8,9 @@ Author:
 # Standard library imports
 
 # Django imports
-# 3rd party imports
 from django.db import models
+
+# 3rd party imports
 
 # Local imports
 

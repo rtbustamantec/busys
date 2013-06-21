@@ -11,11 +11,9 @@ Author:
 from django import forms
 
 # 3rd party imports
-from apps.core.models import Department
+
 # Local imports
-
-
-# Create your models here.
+from apps.core.models import Department
 
 
 class SearchForm(forms.Form):

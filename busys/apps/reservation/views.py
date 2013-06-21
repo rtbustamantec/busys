@@ -8,12 +8,14 @@ Author:
 # Standard library imports
 
 # Django imports
-# 3rd party imports
-from django.shortcuts import redirect, get_object_or_404
 from django.views.generic import TemplateView
-from apps.core.models import Schedule
-from forms import SearchForm
+from django.shortcuts import redirect, get_object_or_404
+
+# 3rd party imports
+
 # Local imports
+from apps.core.models import Schedule
+from apps.reservation.forms import SearchForm
 
 
 class ReservationHomePage(TemplateView):

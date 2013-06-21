@@ -8,13 +8,12 @@ Author:
 # Standard library imports
 
 # Django imports
-from django.conf.urls import patterns, include, url
-
+from django.conf.urls import patterns, url
 
 # 3rd party imports
-from apps.reservation.views import ReservationHomePage, ScheduleList
 
 # Local imports
+from apps.reservation.views import ReservationHomePage, ScheduleList
 
 
 urlpatterns = patterns(
