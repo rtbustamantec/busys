@@ -11,9 +11,9 @@ Authors:
 # Django imports
 
 # 3rd party imports
-from apps.account import strings as account_strings
 
 # Local imports
+from apps.account import strings as account_strings
 
 
 IDENTIFICATION_TYPE_DNI = 'DNI'

@@ -13,9 +13,9 @@ from django.contrib.auth.models import User
 from django.core.cache import cache
 
 # 3rd party imports
-from apps.account.constants import CACHE_USER
 
 # Local imports
+from apps.account.constants import CACHE_USER
 
 
 """
