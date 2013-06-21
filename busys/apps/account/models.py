@@ -14,8 +14,8 @@ from django.db import models
 # 3rd party imports
 
 # Local imports
-from apps.core.models import Company
-from apps.account.constants import IDENTIFICATION_TYPE_CHOICES
+from busys.apps.core.models import Company
+from busys.apps.account.constants import IDENTIFICATION_TYPE_CHOICES
 
 
 class UserProfile(models.Model):

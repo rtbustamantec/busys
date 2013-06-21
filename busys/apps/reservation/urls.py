@@ -13,7 +13,7 @@ from django.conf.urls import patterns, url
 # 3rd party imports
 
 # Local imports
-from apps.reservation.views import ReservationHomePage, ScheduleList
+from busys.apps.reservation.views import ReservationHomePage, ScheduleList
 
 
 urlpatterns = patterns(

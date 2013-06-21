@@ -5,7 +5,6 @@ import os
 # used as starting points for various other paths
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 SITE_ROOT = os.path.join(SITE_ROOT, '..')
-print SITE_ROOT
 
 # Django settings for project project.
 
@@ -66,24 +65,24 @@ MEDIA_ROOT = os.path.join(SITE_ROOT, 'media')
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
 MEDIA_URL = '/media/'
 
-# Absolute path to the directory static files should be collected to.
-# Don't put anything in this directory yourself; store your static files
-# in apps' "static/" subdirectories and in STATICFILES_DIRS.
-# Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+# Absolute path to the directory statics files should be collected to.
+# Don't put anything in this directory yourself; store your statics files
+# in apps' "statics/" subdirectories and in STATICFILES_DIRS.
+# Example: "/home/media/media.lawrence.com/statics/"
+STATIC_ROOT = os.path.join(SITE_ROOT, 'statics')
 
-# URL prefix for static files.
-# Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+# URL prefix for statics files.
+# Example: "http://media.lawrence.com/statics/"
+STATIC_URL = '/statics/'
 
-# Additional locations of static files
+# Additional locations of statics files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
+    # Put strings here, like "/home/html/statics" or "C:/www/django/statics".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
 
-# List of finder classes that know how to find static files in
+# List of finder classes that know how to find statics files in
 # various locations.
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -112,15 +111,27 @@ MIDDLEWARE_CLASSES = (
     'apps.core.middleware.threadlocals.ThreadLocalsMiddleware',
 )
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'busys.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'busys.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(SITE_ROOT, 'templates'),
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'django.contrib.auth.context_processors.auth',
+    'django.contrib.messages.context_processors.messages',
+    # required by grappelli
+    'django.core.context_processors.request',
 )
 
 INSTALLED_APPS = (
@@ -169,3 +180,11 @@ LOGGING = {
         },
     }
 }
+
+# config for mailler
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'admin@admin.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+EMAIL_SUBJECT = ''

@@ -20,8 +20,8 @@ admin.autodiscover()
 
 urlpatterns = patterns(
     '',
-    url(r'^reservation/', include('apps.reservation.urls')),
-    url(r'^account/', include('apps.account.urls')),
+    url(r'^reservation/', include('busys.apps.reservation.urls')),
+    url(r'^account/', include('busys.apps.account.urls')),
     # Examples:
     #url(r'^$', 'project.views.home', name='home'),
     #url(r'^project/', include('project.foo.urls')),

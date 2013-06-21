@@ -14,8 +14,8 @@ from django.shortcuts import redirect, get_object_or_404
 # 3rd party imports
 
 # Local imports
-from apps.core.models import Schedule
-from apps.reservation.forms import SearchForm
+from busys.apps.core.models import Schedule
+from busys.apps.reservation.forms import SearchForm
 
 
 class ReservationHomePage(TemplateView):

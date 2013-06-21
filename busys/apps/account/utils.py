@@ -15,7 +15,7 @@ from django.core.cache import cache
 # 3rd party imports
 
 # Local imports
-from apps.account.constants import CACHE_USER
+from busys.apps.account.constants import CACHE_USER
 
 
 """

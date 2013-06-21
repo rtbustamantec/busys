@@ -15,7 +15,7 @@ from django.db import models
 # 3rd party imports
 
 # Local imports
-from apps.core.middleware import threadlocals
+from busys.apps.core.middleware import threadlocals
 
 
 class AuditableManager(models.Manager):

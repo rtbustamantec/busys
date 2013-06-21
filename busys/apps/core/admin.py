@@ -13,8 +13,8 @@ from django.contrib import admin
 # 3rd party imports
 
 # Local imports
-from apps.core.models import Department, Company, Agency, Buss
-from apps.core.models import ServiceType, Rate, Schedule
+from busys.apps.core.models import Department, Company, Agency, Buss
+from busys.apps.core.models import ServiceType, Rate, Schedule
 
 
 admin.site.register(Department)

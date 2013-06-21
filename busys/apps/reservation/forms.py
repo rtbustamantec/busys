@@ -13,7 +13,7 @@ from django import forms
 # 3rd party imports
 
 # Local imports
-from apps.core.models import Department
+from busys.apps.core.models import Department
 
 
 class SearchForm(forms.Form):

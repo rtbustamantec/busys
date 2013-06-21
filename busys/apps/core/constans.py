@@ -13,7 +13,7 @@ Authors:
 # 3rd party imports
 
 # Local imports
-from apps.core import strings as core_strings
+from busys.apps.core import strings as core_strings
 
 
 SEAT_STATE_AVAILABLE = ''
