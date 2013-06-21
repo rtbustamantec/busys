@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-
 Copyrigh (C) 2013
 
 Authors:
@@ -13,7 +12,7 @@ Authors:
 # 3rd party imports
 
 # Local imports
-from apps.account import strings as account_strings
+from busys.apps.account import strings as account_strings
 
 
 IDENTIFICATION_TYPE_DNI = 'DNI'

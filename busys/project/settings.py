@@ -135,9 +135,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'apps.reservation',
-    'apps.core',
-    'apps.account',
+    'busys.apps.reservation',
+    'busys.apps.core',
+    'busys.apps.account',
     'south',
 )
 

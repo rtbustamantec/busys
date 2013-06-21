@@ -23,12 +23,10 @@ class UserProfile(models.Model):
     user = models.ForeignKey(User)
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
-    identification_type = models.ForeignKey(
-        max_length=3, choices=IDENTIFICATION_TYPE_CHOICES
-    )
+    identification_type = models.CharField(
+        max_length=3, choices=IDENTIFICATION_TYPE_CHOICES)
     identification_number = models.IntegerField(
-        max_length=8, null=False, blank=False
-    )
+        max_length=8, null=False, blank=False)
     birthday = models.DateField()
     nationality = models.CharField(max_length=20)
     location = models.CharField(max_length=20)
