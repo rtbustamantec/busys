@@ -19,16 +19,11 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns(
-    '',
-    url(r'^reservation/', include('busys.apps.reservation.urls')),
-    url(r'^account/', include('busys.apps.account.urls')),
     # Examples:
     #url(r'^$', 'project.views.home', name='home'),
     #url(r'^project/', include('project.foo.urls')),
-    # Uncomment the admin/doc line below to enable admin documentation:
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
+    '',
+    url(r'^reservation/', include('busys.apps.reservation.urls')),
+    url(r'^account/', include('busys.apps.account.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^grappelli/', include('grappelli.urls')),
 )
