@@ -17,7 +17,7 @@ from django.utils.translation import ugettext as _
 
 
 AVAILABLE = _('Available')
-SELECTED = _('Selected.')
+SELECTED = _('Selected')
 BOOKED = _('Booked')
 IN_CAR = _('In car')
 NOT_AVAILABLE = _('Booked or not available')

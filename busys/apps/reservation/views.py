@@ -45,7 +45,6 @@ class ScheduleList(TemplateView):
                 self.seach_form.cleaned_data['departure_on'],
                 rate__arrival_on=self.seach_form.cleaned_data['arrival_on']
             )
-
         return self.render_to_response(self.get_context_data())
 
     def get_context_data(self, **kwargs):
