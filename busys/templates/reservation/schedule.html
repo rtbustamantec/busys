@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "reservation/reservation_homepage.html" %}
 {% block content %}
 <h3>Intinerario</h3>
     <form id="search_schedule" title="search schedule"action="/buy/schedule/" method="POST">
@@ -48,4 +48,4 @@
         </tbody>
     </table>
 {% endif %}
-{% endblock %}
+{% endblock content%}
